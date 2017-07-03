@@ -33,7 +33,11 @@ img{
 }
 .wrapper{
     width: 1000px;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /*flex-wrap: wrap;
+    justify-content: center;*/
     /*
 
 
@@ -45,13 +49,15 @@ img{
     */
 }
 #site-header{
+
   flex-direction: column-reverse;
+  flex-basis: 100%;
     /*
         TODO
         - Flexbox property here
     */
 }
-#site-header div{
+#site-header div {
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
@@ -92,7 +98,9 @@ img{
 }
 #main-navigation{
     background: #444;
+
     display: flex;
+    justify-content: space-around;
 
     /*
         TODO:
@@ -106,6 +114,7 @@ img{
     text-transform: uppercase;
     padding: 10px 20px;
     justify-content: space-between;
+    /*white-space: nowrap;*/
 
     /*
         TODO:
@@ -118,7 +127,7 @@ img{
 
     /*
         TODO:
-        - Flexbox - The logo needs to take up more space
+        @- Flexbox - The logo needs to take up more space
         that the other links
     */
 }
@@ -126,10 +135,15 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 60%;
+    flex-basis: : 60%;
     position: relative;
     display: block;
+    margin-top: -60px;
     margin-left: 5%;
+    flex-direction: row;
+    top: -60%;
+    width: 60%;
+
     /*
 
         TODO:
@@ -146,7 +160,10 @@ aside{
     position: relative;
     width: 20%;
     display: block;
-    flex:auto;
+    flex: auto;
+    flex-basis: 60%;
+    bottom: 50px;
+    top: -60px;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -187,8 +204,11 @@ article time{
     margin-bottom: 30px;
     color: #666;
 }
+
 article img{
   float: right;
+  border-radius: 50%;
+  margin-bottom: 50%;
   width: 30%;
     /*
         TODO:
