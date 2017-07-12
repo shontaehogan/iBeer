@@ -12,222 +12,161 @@ light tan: #eeebda
 
 */
 
-body{
-    font-family: 'Noto Serif', serif;
-    line-height: 1.8;
-    margin: 0;
-    background-color: #eeebda;
-}
-h1, h2, h3{
-    font-family: "Josefin Sans", sans-serif;
-    margin-top: 0;
-    margin-bottom: 0px;
+body {
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+  margin: 0;
+  background-color: #eeebda;
 }
 
-
-img{
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    display: block;
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.wrapper{
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    /*flex-wrap: wrap;
-    justify-content: center;*/
-    /*
 
-
-    /*
-        TODO:
-        @- Center up the page
-        @- Create a flexbox containerer for
-        the major page sections
-    */
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
-#site-header{
 
-  flex-direction: column-reverse;
+.wrapper {
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#site-header {
   flex-basis: 100%;
-    /*
-        TODO
-        - Flexbox property here
-    */
 }
+
 #site-header div {
-    text-align: center;
-    padding: 60px 0 120px 0;
-    font-size: 4em;
-    background-image: url("img/header-img.jpg");
-
-    /*
-        TODO:
-        @- Add a background image "header-img.jpg"
-        make sure that the path to the image is correct
-    */
-
-    background-size: cover;
-    background-position: right bottom;
-
-
+  text-align: center;
+  padding: 60px 0 120px 0;
+  font-size: 4em;
+  background-image: url("img/header-img.jpg");
+  background-size: cover;
+  background-position: right bottom;
 }
 
-}
-#site-header div h1,
-#site-header div h3{
-    margin: 0;
-    line-height: 1;
-    position: relative;
-}
-#site-header div h1{
-    top: 20px;
-}
-#site-header div h3{
-    color: white;
-    bottom: 20px;
-    text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    font-family: "Dancing Script";
-
-    /*
-        TODO:
-        @- Use the script font: 'Dancing Script' fot this text
-    */
-}
-#main-navigation{
-    background: #444;
-
-    display: flex;
-    justify-content: space-around;
-
-    /*
-        TODO:
-        @- Use Flexbox to arrange the navigation links
-    */
-}
-#main-navigation a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    justify-content: space-between;
-    /*white-space: nowrap;*/
-
-    /*
-        TODO:
-        @- Flexbox - Create general spacing between nav links
-    */
-}
-#main-navigation #logo{
-    margin-right: 400px;
-    max-width: 100%;
-
-    /*
-        TODO:
-        @- Flexbox - The logo needs to take up more space
-        that the other links
-    */
-}
-main{
-    padding: 20px;
-    background-color: #444;
-    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    flex-basis: : 60%;
-    position: relative;
-    display: block;
-    margin-top: -60px;
-    margin-left: 5%;
-    flex-direction: row;
-    top: -60%;
-    width: 60%;
-
-    /*
-
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
+#site-header div h3 {
+  margin: 0;
+  line-height: 1;
+  position: relative;
 }
 
-
-aside{
-    padding: 20px;
-    background-color: #eee;
-    box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    position: relative;
-    width: 20%;
-    display: block;
-    flex: auto;
-    flex-basis: 60%;
-    bottom: 50px;
-    top: -60px;
-    /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
-}
-aside h3{
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid #ccc;
-}
-aside img{
-    border-radius: 50%;
-    margin-bottom: 30px;
-    border: 2px solid white;
-
-}
-article{
-    background-color: white;
-    box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    padding: 20px;
-    margin-bottom: 20px;
-}
-article h2{
-    line-height: 1em;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid #ccc;
-    text-transform: uppercase;
-}
-article time{
-    font-size: 0.8em;
-    text-align: center;
-    display: block;
-    margin-bottom: 30px;
-    color: #666;
+#site-header div h1 {
+  top: 20px;
 }
 
-article img{
-  float: right;
+#site-header div h3 {
+  color: white;
+  bottom: 20px;
+  text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3);
+  font-family: "Dancing Script";
+}
+
+#main-navigation {
+  background: #444;
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+#main-navigation #logo {
+  margin-right: 400px;
+  max-width: 100%;
+}
+
+main {
+  padding: 20px;
+  background-color: #444;
+  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  flex-basis: 60%;
+  position: relative;
+  top: -60px;
+}
+
+aside {
+  padding: 20px;
+  background-color: #eee;
+  box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
+  position: relative;
+  top: -60px;
+  flex-basis: 20%;
+}
+
+aside h3 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+aside img {
   border-radius: 50%;
-  margin-bottom: 50%;
-  width: 30%;
-    /*
-        TODO:
-        - Float article images to the right
-        and match sizes and spacing to the mockup
-    */
+  margin-bottom: 30px;
+  border: 2px solid white;
 }
-article footer p{
-    /*
-        TODO:
-        - Style the article footer
-        HINT: Look to the article header;
-    */
-}
-#site-footer{
 
-    background: #333;
-    /*
-        TODO:
-        - Style the site footer
-    */
+article {
+  background-color: white;
+  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+article time {
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+article img {
+  float: right;
+  width: 30%;
+}
+
+article footer p {
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 15px 0 0 0;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+#site-footer {
+  background: #333;
+  text-align: center;
+  margin: auto;
+  color: white;
+  background: #333;
+  padding: 15px 0;
+  font-family: "Noto Serif";
 }
